@@ -1,0 +1,18 @@
+{
+  "name": "@kjn/svg-pan-zoom-examples",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "rm -rf ./dist && parcel build index.html && cp demo.gif ./dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@kjn/svg-pan-zoom": "^1.1.6"
+  },
+  "devDependencies": {
+    "parcel": "^2.5.0"
+  }
+}

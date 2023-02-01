@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examples | @kjn/svg-minimap</title>
+    <style>
+      main {
+        position: relative;
+
+        width: 800px;
+        height: 600px;
+      }
+
+      #svg {
+        position: absolute;
+        border: 1px solid black;
+      }
+
+      #minimapContainer {
+        position: absolute;
+
+        width: 200px;
+        height: 200px;
+
+        right: 0;
+        top: 0;
+
+        border: 1px solid gray;
+        box-shadow: 0px 0px 2px 2px #eee;
+        background-color: rgba(255, 255, 255, 0.9);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <svg id="svg" width="800" height="600">
+        <path
+          d="M 10 315
+        L 110 215
+        A 36 60 0 0 1 150.71 170.29
+        L 172.55 152.45
+        A 30 50 -45 0 1 215.1 109.9
+        L 315 10"
+          stroke="black"
+          fill="green"
+          stroke-width="2"
+          fill-opacity="0.5"
+        />
+        <ellipse cx="144.931" cy="229.512" rx="36" ry="60" fill="transparent" stroke="blue" />
+        <ellipse cx="115.779" cy="155.778" rx="36" ry="60" fill="transparent" stroke="blue" />
+      </svg>
+
+      <div id="minimapContainer"></div>
+    </main>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
